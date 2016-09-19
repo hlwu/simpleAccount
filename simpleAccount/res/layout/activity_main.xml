@@ -1,0 +1,551 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main111"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2.6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/setting_toolbar_complete_btn_pressed"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:background="@drawable/name"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="10dip"
+                    android:text="近一个月收入"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:id="@+id/tv_month_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dip"
+                    android:text="     0     "
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="10dip"
+                    android:text="近一个月支出"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:id="@+id/tv_month_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dip"
+                    android:text="     0    "
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="10dip"
+                    android:text="近一个月结余"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:id="@+id/tv_month_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="     0"
+                    android:textSize="18dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.3"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/divider" >
+
+     <!--   <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/account_merge_separate_line" /> 
+             --> 
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_show_today_day"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dip"
+                android:background="@drawable/main_today"
+                android:gravity="center"
+                android:textColor="#A67D3D" />
+
+            <LinearLayout
+                android:layout_width="133dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="今日统计"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/tv_show_today"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_day"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_dailyincome" />
+
+                    <TextView
+                        android:id="@+id/tv_show_day_income"
+                        android:layout_width="62dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#67a13b"
+                        android:textSize="16dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_day"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_dailyexpense" />
+
+                    <TextView
+                        android:id="@+id/tv_show_day_pay"
+                        android:layout_width="62dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#FF0000"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+     <!--   <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/account_merge_separate_line" />
+      --> 
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_week"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dip"
+                android:background="@drawable/main_week" />
+
+            <LinearLayout
+                android:layout_width="133dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="本周统计"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/tv_show_week"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_day"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_dailyincome" />
+
+                    <TextView
+                        android:id="@+id/tv_show_week_income"
+                        android:layout_width="62dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#67a13b"
+                        android:textSize="16dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_day"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_dailyexpense" />
+
+                    <TextView
+                        android:id="@+id/tv_show_week_pay"
+                        android:layout_width="62dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#FF0000"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <!--    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/account_merge_separate_line" />
+             -->
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_month"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dip"
+                android:background="@drawable/main_month" />
+
+            <LinearLayout
+                android:layout_width="133dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="本月统计"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/tv_show_month"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_day"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_dailyincome" />
+
+                    <TextView
+                        android:id="@+id/tv_show_month_income"
+                        android:layout_width="62dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#67a13b"
+                        android:textSize="16dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_day"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_dailyexpense" />
+
+                    <TextView
+                        android:id="@+id/tv_show_month_pay"
+                        android:layout_width="62dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="15dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#FF0000"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+     <!--   <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/account_merge_separate_line" />
+             --> 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnnewpay"
+                android:layout_width="70dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="38dip"
+                android:background="@drawable/btn_style_add" />
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dip"
+                android:text="记一笔"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnsearch"
+                android:layout_width="70dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="37dip"
+                android:background="@drawable/btn_style_add1" />
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="21dip"
+                android:text="查询"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnset"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="37dip"
+                android:background="@drawable/btn_style_add2" />
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dip"
+                android:text="设置"
+                android:textSize="18dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

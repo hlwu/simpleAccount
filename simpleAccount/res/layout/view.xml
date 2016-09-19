@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main111"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="299dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_view_choice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dip"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="33dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="55dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54dip"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="名称"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_view_name"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="88dip"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:text="TextView"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="33dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="55dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dip"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="金额"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_view_money"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="86dip"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:text="TextView"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="33dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="55dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dip"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="类别"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_view_category"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="86dip"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:text="TextView"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="33dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="55dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="52dip"
+                android:layout_weight="1.43"
+                android:gravity="center"
+                android:text="日期"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_view_date"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="88dip"
+                android:layout_weight="1.2"
+                android:gravity="left"
+                android:text="TextView"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66dip"
+            android:layout_marginTop="10dip"
+            android:text="备注"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/tv_view_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="55dip"
+            android:layout_marginRight="33dip"
+            android:layout_marginTop="20dip"
+            android:text="TextView"
+            android:layout_marginBottom="20dip"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</LinearLayout>

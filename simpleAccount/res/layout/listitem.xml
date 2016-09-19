@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/listitem_tv"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="20dip"
+            android:text="text" />
+
+        <EditText
+            android:id="@+id/listitem_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:inputType="number"
+            android:gravity="right"
+            android:ems="8" >
+
+        </EditText>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dip"
+            android:text="¥" />
+    </LinearLayout>
+
+</LinearLayout>

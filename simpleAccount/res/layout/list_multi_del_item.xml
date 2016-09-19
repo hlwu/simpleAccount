@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="11dip"
+    android:layout_marginRight="11dip"
+    android:background="@drawable/main_scroll_bg_middle_pressed"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="111dip"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_multi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textSize="23dip" />
+
+            <TextView
+                android:id="@+id/tv_multi_category"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="#808080" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_multi_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="#FF0000"
+                android:textSize="23dip" />
+
+            <TextView
+                android:id="@+id/tv_multi_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="#800000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cb_multi_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_for_multi_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+
+</LinearLayout>

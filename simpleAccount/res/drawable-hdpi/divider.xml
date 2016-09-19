@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <size 
+        android:height="11dip"/>
+
+    <solid android:color="@drawable/account_merge_separate_line" />
+
+</selector>
